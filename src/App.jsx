@@ -1,8 +1,10 @@
-import Landing from './Pages/Landing'
+// import Landing from './Pages/Landing'
+import Footer from "./components/Footer"
 const App = () => {
   return (
     <>
-    <Landing />
+    {/* <Landing /> */}
+    <Footer />
     </>
   )
 }
