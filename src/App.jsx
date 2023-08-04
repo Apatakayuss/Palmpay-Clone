@@ -1,7 +1,9 @@
-
+import Landing from './Pages/Landing'
 const App = () => {
   return (
-    <div>App</div>
+    <>
+    <Landing />
+    </>
   )
 }
 
