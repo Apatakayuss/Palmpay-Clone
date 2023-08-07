@@ -3,7 +3,7 @@ import Naija from '../assets/naija.png'
 import {BiCaretDown} from 'react-icons/bi'
 const Navigation = () => {
   return (
-    <div className=" w-screen bg-yellow-200 items-center h-[90px] flex justify-around">
+    <div className=" w-screen bg-yellow-200 items-center h-[90px] flex  justify-around">
         <div>
           <img src={Logo} alt="" />
         </div>
