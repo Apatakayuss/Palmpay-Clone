@@ -5,8 +5,10 @@ import Mockup from '../assets/mockup.png'
 import styled from 'styled-components'
 import Transaction from '../assets/transaction.png'
 import {BsForward} from 'react-icons/bs'
-import More from '../assets/getmore.png'
-// import Footer from '../components/Footer'
+import Button from '../components/GlobalButton'
+import Footer from '../components/Footer'
+import Get from '../assets/getmore.png'
+
 
 const Landing = () => {
   return (
@@ -34,6 +36,7 @@ const Landing = () => {
         </DescContain>
       </ImgDesc>
     </Wrapper>
+    <div >
     <Payment>
       <ImgContainer>
       <img src={Transaction} alt="" />
@@ -53,58 +56,69 @@ const Landing = () => {
         </Extra>
       </PayText>
     </Payment>
+    </div>
 
 
-    <GetMore>
-      <GetText>
-        <GetTextWrap>
-          <GetTextBold>Get More For Your Money</GetTextBold>
-          <GetTextNorm>Goodbye charges, hello rewards! With PalmPay you save on fees and earn as you spend through discounts and cashback. Get the app now and make your money go further.</GetTextNorm>
+<div >
+    <Getmore>
+        <GetText>
+            <GetTextWrap>
+                <GetBold>Get More For Your Money</GetBold>
+                <GetNorm>
+                Goodbye charges, hello rewards! With PalmPay you save on fees and earn as you spend through discounts and cashback. Get the app now and make your money go further.
+                </GetNorm>
+              
+                <Button className='w-[fit-content] mx-auto'>
+                  Get Palmpay
+                </Button>
+                
+                
+            </GetTextWrap>
+        </GetText>
 
-         
-        </GetTextWrap>
-      </GetText>
-      <GetImage>
-            <img src={More} alt="" />
-      </GetImage>
-    </GetMore>
+
+          <GetImage>
+              <img src={Get} alt="" />
+          </GetImage>
+
+
+    </Getmore>
+    </div>
+   
+
 
 
     
     </GlobalWrapper>
-    {/* <Footer /> */}
+    <Footer />
     </LastDiv>
   )
 }
 export default Landing
 //Third screen styles
-
-const GetMore = styled.div`
+const Getmore = styled.div`
+padding: 30px 0;
 display: flex;
-height: 90vh;
 @media (max-width: 768px){
+  height: 100%;
   flex-direction: column;
-  text-align: center;
+  gap: 20px;
 }
 `
 const GetText = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
 flex: 1;
-@media (max-width: 768px){
-  align-items: center;
-  justify-content: center;
-}
+margin: auto 0;
 `
 const GetTextWrap = styled.div`
-  
+@media (max-width: 768px){
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
-  @media (max-width: 768px){
-    width: 100%;
-  }
+}
 `
-const GetTextBold = styled.h2`
+const GetBold = styled.h2`
 font-size: 3rem;
 line-height: 1;
 font-weight: 600;
@@ -113,6 +127,7 @@ line-height: 1.2;
 @media (max-width: 768px){
   width: 90%;
   margin: auto;
+  text-align: center;
 }
 @media (max-width: 425px){
   font-size: 1.8rem;
@@ -120,7 +135,7 @@ line-height: 1.2;
   line-height: 1.5;
 }
 `
-const GetTextNorm = styled.p`
+const GetNorm = styled.p`
 width: 100%;
 margin: 25px 0;
 line-height: 2;
@@ -128,13 +143,15 @@ line-height: 2;
   width: 100%;
 }
 `
-
 const GetImage = styled.div`
-display: flex;
 flex: 1;
-justify-content: center;
-
+@media (max-width: 768px){
+  display: flex;
+  justify-content: center;
+}
 `
+
+
 
 
 
@@ -146,6 +163,7 @@ height: 90vh;
 @media (max-width: 768px){
   flex-direction: column;
   text-align: center;
+  height: fit-content;
 }
 `
 const TranTextBold = styled.h1`
