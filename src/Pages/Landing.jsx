@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import Transaction from '../assets/transaction.png'
 import {BsForward} from 'react-icons/bs'
 import More from '../assets/getmore.png'
-import GlobalButton from '../components/GlobalButton'
 // import Footer from '../components/Footer'
 
 const Landing = () => {
@@ -61,10 +60,8 @@ const Landing = () => {
         <GetTextWrap>
           <GetTextBold>Get More For Your Money</GetTextBold>
           <GetTextNorm>Goodbye charges, hello rewards! With PalmPay you save on fees and earn as you spend through discounts and cashback. Get the app now and make your money go further.</GetTextNorm>
-          {/* <Button>Get more from Palmpay</Button> */}
-          <GlobalButton bgColor="#FF5722" textColor="#FFFFFF" fontSize="18px">
-        Click Me
-      </GlobalButton>
+
+         
         </GetTextWrap>
       </GetText>
       <GetImage>
