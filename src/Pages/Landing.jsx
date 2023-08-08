@@ -5,6 +5,8 @@ import Mockup from '../assets/mockup.png'
 import styled from 'styled-components'
 import Transaction from '../assets/transaction.png'
 import {BsForward} from 'react-icons/bs'
+import More from '../assets/getmore.png'
+import GlobalButton from '../components/GlobalButton'
 // import Footer from '../components/Footer'
 
 const Landing = () => {
@@ -33,10 +35,6 @@ const Landing = () => {
         </DescContain>
       </ImgDesc>
     </Wrapper>
-
-
-
-
     <Payment>
       <ImgContainer>
       <img src={Transaction} alt="" />
@@ -58,6 +56,22 @@ const Landing = () => {
     </Payment>
 
 
+    <GetMore>
+      <GetText>
+        <GetTextWrap>
+          <GetTextBold>Get More For Your Money</GetTextBold>
+          <GetTextNorm>Goodbye charges, hello rewards! With PalmPay you save on fees and earn as you spend through discounts and cashback. Get the app now and make your money go further.</GetTextNorm>
+          {/* <Button>Get more from Palmpay</Button> */}
+          <GlobalButton bgColor="#FF5722" textColor="#FFFFFF" fontSize="18px">
+        Click Me
+      </GlobalButton>
+        </GetTextWrap>
+      </GetText>
+      <GetImage>
+            <img src={More} alt="" />
+      </GetImage>
+    </GetMore>
+
 
     
     </GlobalWrapper>
@@ -68,6 +82,62 @@ const Landing = () => {
 export default Landing
 //Third screen styles
 
+const GetMore = styled.div`
+display: flex;
+height: 90vh;
+@media (max-width: 768px){
+  flex-direction: column;
+  text-align: center;
+}
+`
+const GetText = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+flex: 1;
+@media (max-width: 768px){
+  align-items: center;
+  justify-content: center;
+}
+`
+const GetTextWrap = styled.div`
+  
+  margin: auto;
+  @media (max-width: 768px){
+    width: 100%;
+  }
+`
+const GetTextBold = styled.h2`
+font-size: 3rem;
+line-height: 1;
+font-weight: 600;
+width: 100%;
+line-height: 1.2;
+@media (max-width: 768px){
+  width: 90%;
+  margin: auto;
+}
+@media (max-width: 425px){
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+`
+const GetTextNorm = styled.p`
+width: 100%;
+margin: 25px 0;
+line-height: 2;
+@media (max-width: 768px){
+  width: 100%;
+}
+`
+
+const GetImage = styled.div`
+display: flex;
+flex: 1;
+justify-content: center;
+
+`
 
 
 
@@ -75,8 +145,7 @@ export default Landing
 const Payment = styled.div`
 display: flex;
 padding: 10px 0;
-height: 90vh;
-      
+height: 90vh; 
 @media (max-width: 768px){
   flex-direction: column;
   text-align: center;
