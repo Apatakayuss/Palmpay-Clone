@@ -4,10 +4,10 @@ import {FaTelegramPlane, FaFacebookF} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className="bg-gray-300 py-[50px]">
+    <div className="bg-[#e6e6e6] text-[#5c5a5a] py-[90px]">
     <div className="flex justify-center flex-wrap gap-10 w-[80%] mx-auto">
         <div className="flex-1">
-            <h3 className="text-xl mb-[25px]">Contact us</h3 >
+            <h3 className="text-xl mb-[25px] text-[#000000]">Contact us</h3 >
             <p className='mb-6'>Email:</p>
             <p className='mb-6'>support@palmpay.com</p>
             <p className='mb-6'>Phone: <a className='text-blue-500' href={'tel:${018886888}'}>018886888</a></p>
@@ -20,23 +20,23 @@ const Footer = () => {
             </div>
         </div>
         <div className="flex-1 pl-6">
-            <h3 className="text-xl mb-[25px]">Personal</h3 >
+            <h3 className="text-xl mb-[25px] text-[black]">Personal</h3 >
             <p>Palmpay App</p>
         </div>
         <div className="flex-1 pl-6">
-            <h3 className="text-xl mb-[25px]">Agents</h3 >
+            <h3 className="text-xl mb-[25px] text-[black]">Agents</h3 >
             <p className='mb-6'>POS</p>
             <p>Apply Now</p>
         </div>
         <div className="flex-1 pl-6">
-            <h3 className="text-xl mb-[25px]">Company</h3 >
+            <h3 className="text-xl mb-[25px] text-[black]">Company</h3 >
             <p className='mb-6'>About Us</p>
             <p className='mb-6'>Career</p>
             <p className='mb-6'>Blog</p>
             <p>Press</p>
         </div>
         <div className="flex-1 pl-6">
-            <h3 className="text-xl mb-[25px]">Legal</h3 >
+            <h3 className="text-xl mb-[25px] text-[black]">Legal</h3 >
             <p className='mb-6'>Privacy & Cookie Policy</p>
             <p>Terms & Conditions</p>
         </div>

@@ -1,15 +1,17 @@
 import Google from '../assets/playstore.png'
 import AppleStore from '../assets/applestore.png'
 import Mockup from '../assets/mockup.png'
-import Nav from '../components/Navigation'
+// import Nav from '../components/Navigation'
 import styled from 'styled-components'
 import Transaction from '../assets/transaction.png'
 import {BsForward} from 'react-icons/bs'
+// import Footer from '../components/Footer'
 
 const Landing = () => {
   return (
+    <LastDiv>
     <GlobalWrapper>
-      <Nav />
+      {/* <Nav /> */}
     <Wrapper>
       <Desc>
         <BoldText>
@@ -41,6 +43,7 @@ const Landing = () => {
       </ImgContainer>
 
       <PayText>
+        <Extra>
         <TranTextBold>
         Enjoy Fast And Reliable Payments
         </TranTextBold>
@@ -50,64 +53,100 @@ const Landing = () => {
         <Hyper>
         Learn more <BsForward />
         </Hyper>
+        </Extra>
       </PayText>
     </Payment>
-    </GlobalWrapper>
 
+
+
+    
+    </GlobalWrapper>
+    {/* <Footer /> */}
+    </LastDiv>
   )
 }
 export default Landing
+//Third screen styles
+
+
+
+
+// Second screen styles
 const Payment = styled.div`
 display: flex;
-justify-content: center;
-padding: 30px 0;
+padding: 10px 0;
+height: 90vh;
+      
 @media (max-width: 768px){
   flex-direction: column;
   text-align: center;
 }
 `
 const TranTextBold = styled.h1`
-font-size: 2.5rem;
+font-size: 3rem;
 line-height: 1;
 font-weight: 600;
-width: 80%;
+width: 100%;
+line-height: 1.2;
 @media (max-width: 768px){
   width: 90%;
   margin: auto;
 }
+@media (max-width: 425px){
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
 `
 const TranText = styled.p`
-width: 80%;
-margin: 30px 0;
+width: 100%;
+margin: 25px 0;
+line-height: 2;
 @media (max-width: 768px){
-  margin: 30px auto;
-  width: 90%;
+  width: 100%;
 }
 `
 const Hyper = styled.a`
 display: flex;
 align-items: center;
 gap: 7px;
-width: 80%;
+width: 100%;
 color: #6307b2;
+align-items: center;
 @media (max-width: 768px){
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 `
 const ImgContainer = styled.div`
 display: flex;
 flex: 1;
 `
+const Extra = styled.div`
+  width: 80%;
+  margin: auto;
+  @media (max-width: 768px){
+    width: 100%;
+  }
+`
 const PayText = styled.div`
 display: flex;
 flex-direction: column;
+align-items: center;
 flex: 1;
-margin: 0 auto;
+@media (max-width: 768px){
+  align-items: center;
+  justify-content: center;
+}
 `
 
+// First screen styles
 const GlobalWrapper = styled.div`
   width: 80%;
   margin: auto;
+  @media (max-width: 768px){
+    width: 95%;
+  }
 `
 const Wrapper = styled.div`
   display: flex;
@@ -115,6 +154,7 @@ const Wrapper = styled.div`
     width: 90%;
     flex-direction: column;
     gap: 15px;
+    margin: auto;
   }
 `
 const Desc = styled.div`
@@ -135,16 +175,21 @@ const BoldText = styled.h2`
     text-align: center;
     width: 100%;
   }
+  @media (max-width: 425px){
+    font-size: 1.8rem;
+  }
 `
 const Span = styled.span`
-font-weight: 500;
+font-weight: 600;
 `
 const NormText = styled.p`
   margin-top: 25px;
   margin-bottom: 25px;
   width: 85%;
+  font-weight: 400;
   @media (max-width: 768px){
-    margin: 25px auto;
+    margin:25px auto;
+    width: 100%;
     text-align: center;
   }
 `
@@ -155,6 +200,7 @@ const Stores = styled.div`
   gap: 30px;
   @media (max-width: 768px){
     margin: auto;
+    width: 100%;
   }
 `
 const Contain = styled.div`
@@ -177,3 +223,4 @@ flex: 1;
 const DescContain = styled.div`
   padding: 10px 0;
 `
+const LastDiv = styled.div``
