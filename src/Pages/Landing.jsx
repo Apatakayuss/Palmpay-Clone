@@ -141,6 +141,7 @@ margin: 25px 0;
 line-height: 2;
 @media (max-width: 768px){
   width: 100%;
+  text-align: center;
 }
 `
 const GetImage = styled.div`
