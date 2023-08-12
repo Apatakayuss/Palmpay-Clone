@@ -23,6 +23,7 @@ const Getty = () => {
 }
 
 export default Getty
+
 const GetMore = styled.div`
 display: flex;
 height: 90vh;
